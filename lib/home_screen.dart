@@ -31,43 +31,44 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      body: Column(children: [
-        NowTrendingTab(),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              margin: EdgeInsets.only(top: 4.h, left: 2.h),
-              child: Text(
-                "Explore Categories",
-                style: GoogleFonts.poppins(
-                  textStyle: TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
+      body: Column(children: [NowTrendingTab(), RowCtExplore()]),
+    );
+  }
+
+  Row RowCtExplore() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Container(
+          margin: EdgeInsets.only(top: 4.h, left: 2.h),
+          child: Text(
+            "Explore Categories",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(top: 4.h, right: 2.h),
-              child: TextButton(
-                onPressed: () {
-                  print("show all");
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (context) => ,
-                },
-                child: Text(
-                  'Show All',
-                  style: TextStyle(fontSize: 22.0, color: appColors.main_color),
-                ),
-              ),
-            )
-          ],
+          ),
+        ),
+        Container(
+          margin: EdgeInsets.only(top: 4.h, right: 2.h),
+          child: TextButton(
+            onPressed: () {
+              print("show all");
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (context) => ,
+            },
+            child: Text(
+              'Show All',
+              style: TextStyle(fontSize: 22.0, color: appColors.main_color),
+            ),
+          ),
         )
-      ]),
+      ],
     );
   }
 
