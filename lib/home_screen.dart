@@ -31,7 +31,46 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-      body: Column(children: [NowTrendingTab(), RowCtExplore()]),
+      body: Column(children: [
+        NowTrendingTab(),
+        RowCtExplore(),
+        Row(
+          children: [
+            Container(
+              margin: EdgeInsets.only(left: 5.w, top: 2.h),
+              height: 19.h,
+              width: 30.w,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.2),
+                    // spreadRadius: 2,
+                    // blurRadius: 50,
+                    offset: Offset(0, 0), // changes position of shadow
+                  ),
+                ],
+                border: Border.all(
+                  color: Color.fromARGB(255, 145, 145, 145),
+                ),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: InkWell(
+                customBorder: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                overlayColor: MaterialStateProperty.all(appColors.main_color),
+                onTap: () => print("tapped"),
+                radius: 60,
+                child: Ink.image(
+                    fit: BoxFit.contain, // Fixes border issues
+                    child:
+                        Container(width: 2.h, height: 2.h, color: Colors.red),
+                    image: AssetImage("assets/appbar_icon.png")),
+              ),
+            ),
+          ],
+        )
+      ]),
     );
   }
 
