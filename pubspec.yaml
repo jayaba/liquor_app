@@ -68,6 +68,15 @@ flutter:
     - assets/onboard3.png
     - assets/appbar_icon.png
     - assets/trending_drink.png
+    - assets/beer_cat.png
+    - assets/app_bar.png
+    - assets/dcsl_logo.png
+    - assets/mendis_logo.png
+    - assets/rockland_logo.png
+    - assets/idl_logo.png
+    - assets/beer_logo.png
+    - assets/carsberg.png
+    - assets/carsberg1.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
