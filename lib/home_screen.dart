@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:liquor_app_sinhala/App_Colors.dart';
+import 'package:liquor_app_sinhala/beer_screen.dart';
+import 'package:liquor_app_sinhala/category.dart';
+import 'package:liquor_app_sinhala/second_onboard_screen.dart';
 import 'package:sizer/sizer.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -42,6 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
               CategoryMENDIS(appColors: appColors),
               CategoryROCKLAND(appColors: appColors),
               CategoryIDL(appColors: appColors),
+              CategorySHOWALL(appColors: appColors)
             ],
           ),
         ]),
@@ -105,27 +109,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
-        // SizedBox(
-        //   width: 13.h,
-
-        // ),
-        Container(
-          // alignment: Alignment.centerRight,
-          margin: EdgeInsets.fromLTRB(12.h, 4.h, 0.h, 0),
-          child: TextButton(
-            onPressed: () {
-              print("show all");
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(
-              //     builder: (context) => ,
-            },
-            child: Text(
-              'Show All',
-              style: TextStyle(fontSize: 22.0, color: appColors.main_color),
-            ),
-          ),
-        )
       ],
     );
   }
@@ -201,6 +184,55 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         )
       ],
+    );
+  }
+}
+
+class CategorySHOWALL extends StatelessWidget {
+  const CategorySHOWALL({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(left: 5.w, top: 0.h, bottom: 8.h),
+      height: 19.h,
+      width: 30.w,
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.2),
+            // spreadRadius: 2,
+            // blurRadius: 50,
+            offset: Offset(0.h, 0.h), // changes position of shadow
+          ),
+        ],
+        border: Border.all(
+          color: Color.fromARGB(255, 145, 145, 145),
+        ),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: InkWell(
+        customBorder: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        overlayColor: MaterialStateProperty.all(appColors.main_color),
+        onTap: () => print("tapped"),
+        radius: 60,
+        child: Ink.image(
+            fit: BoxFit.contain, // Fixes border issues
+            child: Container(
+                alignment: Alignment.bottomCenter,
+                child: Text("Show All",
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold))),
+            image: AssetImage("assets/arr.png"),
+            alignment: Alignment.center),
+      ),
     );
   }
 }
@@ -1131,7 +1163,14 @@ class CategoryBeer extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         overlayColor: MaterialStateProperty.all(appColors.main_color),
-        onTap: () => print("tapped"),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => BeerScreen(),
+            ),
+          );
+        },
         radius: 60,
         child: Ink.image(
             fit: BoxFit.contain, // Fixes border issues
