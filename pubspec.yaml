@@ -77,6 +77,14 @@ flutter:
     - assets/beer_logo.png
     - assets/carsberg.png
     - assets/carsberg1.png
+    - assets/gov.png
+    - assets/ab.png
+    - assets/roces.png
+    - assets/lion_st.png
+    - assets/old_res.png
+    - assets/dry_gin.png
+    - assets/barca.png
+    - assets/navy_seal.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

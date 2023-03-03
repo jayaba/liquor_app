@@ -67,13 +67,20 @@ class _HomeScreenState extends State<HomeScreen> {
           top: 56.h,
           left: 2.5.h,
           child: Container(
-            color: Colors.black,
-            height: 40.h,
+            padding: EdgeInsets.only(left: 1.h, right: 1.2.h),
+            height: 30.h,
             width: 90.w,
             child: ListView(
               children: [
-                tileOne(appColors: appColors),
-                tileOne(appColors: appColors),
+                tileNumOne(appColors: appColors),
+                titleNumTwo(appColors: appColors),
+                tileNumThree(appColors: appColors),
+                tileNumFour(appColors: appColors),
+                tileNumFive(appColors: appColors),
+                tileNumSix(appColors: appColors),
+                tileNumSeven(appColors: appColors),
+                tileNumEight(appColors: appColors),
+                tileNumNine(appColors: appColors),
               ],
             ),
           ),
@@ -198,8 +205,8 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class tileOne extends StatelessWidget {
-  const tileOne({
+class tileNumNine extends StatelessWidget {
+  const tileNumNine({
     super.key,
     required this.appColors,
   });
@@ -218,6 +225,623 @@ class tileOne extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 95.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 1.2.h),
+          child: Image.asset(
+            "assets/navy_seal.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Navy Seal",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 33.5%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 2850",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumEight extends StatelessWidget {
+  const tileNumEight({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 90.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 1.5.h),
+          child: Image.asset(
+            "assets/barca.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Barcadi",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 40%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 4500",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumSeven extends StatelessWidget {
+  const tileNumSeven({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 90.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 1.h),
+          child: Image.asset(
+            "assets/dry_gin.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Ascot Dry Gin",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 39%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 4500",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumSix extends StatelessWidget {
+  const tileNumSix({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 90.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 1.h),
+          child: Image.asset(
+            "assets/old_res.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Old Reserve",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 34%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 3900",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumFive extends StatelessWidget {
+  const tileNumFive({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 99.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 0.h),
+          child: Image.asset(
+            "assets/lion_st.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Lion ST",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "625ml | 8.8%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 570",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumFour extends StatelessWidget {
+  const tileNumFour({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 90.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 1.h),
+          child: Image.asset(
+            "assets/roces.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Rockland ES",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 33.5%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 2860",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumThree extends StatelessWidget {
+  const tileNumThree({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 90.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 0.2.h),
+          child: Image.asset(
+            "assets/ab.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "All Blue AB",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 40%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 3800",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class titleNumTwo extends StatelessWidget {
+  const titleNumTwo({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      height: 10.h,
+      width: 90.w,
+      child: ListTile(
+        leading: Container(
+          margin: EdgeInsets.only(top: 1.h, left: 1.h),
+          child: Image.asset(
+            "assets/gov.png",
+          ),
+        ),
+        title: Container(
+          margin: EdgeInsets.only(top: 2.h),
+          child: Text(
+            "Governor's Choice",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 19,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        subtitle: Container(
+          child: Text(
+            "750 ml | 33.5%",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.tile_text_color,
+                fontSize: 13,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+        isThreeLine: true,
+        trailing: Container(
+          margin: EdgeInsets.only(top: 2.5.h),
+          child: Text(
+            "Rs. 3200",
+            style: GoogleFonts.poppins(
+              textStyle: TextStyle(
+                color: appColors.main_color,
+                fontSize: 20,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class tileNumOne extends StatelessWidget {
+  const tileNumOne({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 2.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 5,
+            blurRadius: 7,
+
             offset: Offset(0, 3), // changes position of shadow
           ),
         ],
