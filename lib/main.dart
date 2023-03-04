@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
       builder: (context, orientation, deviceType) => MaterialApp(
         home: SplachScreen(),
         debugShowCheckedModeBanner: false,
+        
       ),
     );
   }
