@@ -29,8 +29,25 @@ class BeerScreen extends StatelessWidget {
         ),
       ),
       body: ListView(children: [
+        Container(
+          margin: EdgeInsets.only(left: 5.w),
+          child: Text(
+            "Beer Area",
+            style: GoogleFonts.genos(
+              letterSpacing: 1,
+              textStyle: TextStyle(
+                color: Colors.black,
+                fontSize: 5.h,
+                fontWeight: FontWeight.w400,
+              ),
+            ),
+          ),
+        ),
         Column(children: [
-          LionLarger(appColors: appColors), //left side image
+          LionLarger(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ), //left side image
           LionStrong(appColors: appColors),
 
           /// right side image
@@ -77,9 +94,985 @@ class BeerScreen extends StatelessWidget {
           SizedBox(
             height: 1.3.h,
           ),
-          LionIce(appColors: appColors)
+          LionIce(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          SomersbyApple(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          SomersbyBlackberry(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          Heineken(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          AnchorStrong(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          AnchorSmooth(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          Bison(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          Sake(appColors: appColors),
+          SizedBox(
+            height: 5.h,
+          ),
         ]),
       ]),
+    );
+  }
+}
+
+class Sake extends StatelessWidget {
+  const Sake({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 4.h), // whole container
+      height: 25.h,
+      width: 90.w,
+      child: Row(
+        //Master Coumn and Right side aligned Image
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Sake",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 3.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 1.h),
+                width: 15.h,
+                height: 11.h,
+                child: Text(
+                    "Sake is a Japanese rice wine that is brewed using rice, water, yeast, and koji, while beer is typically made from malted barley,hops.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 0.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 4.6.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/sake.png"), //image cont
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Bison extends StatelessWidget {
+  const Bison({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //color: Color.fromARGB(255, 217, 218, 219),
+      margin: EdgeInsets.only(top: 2.h), // whole container
+      height: 26.h,
+      width: 90.w,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 4.2.h, top: 5.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/Bison.png"), //image cont
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Bison",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.9.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 1.h),
+                width: 15.h,
+                height: 13.h,
+                child: Text(
+                    "Bison entered the strong beer market in 1998 and has paved way for the biggest segment in the Sri Lankan beer market. ",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 1.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class AnchorSmooth extends StatelessWidget {
+  const AnchorSmooth({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 4.h), // whole container
+      height: 25.h,
+      width: 90.w,
+      child: Row(
+        //Master Coumn and Right side aligned Image
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "ANC: Smooth",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.7.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 1.h),
+                width: 15.h,
+                height: 11.h,
+                child: Text(
+                    "Anchor Smooth is a lager brewed according to the Pilsen tradition, using an authentic European recipe.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 0.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 4.6.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/AncSmooth.png"), //image cont
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class AnchorStrong extends StatelessWidget {
+  const AnchorStrong({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //color: Color.fromARGB(255, 217, 218, 219),
+      margin: EdgeInsets.only(top: 2.h), // whole container
+      height: 26.h,
+      width: 90.w,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 4.h, top: 5.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/AnStrong.png"), //image cont
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "ANC: Strong",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.9.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 1.h),
+                width: 15.h,
+                height: 13.h,
+                child: Text(
+                    "With its long standing European brewing tradition,Anchor Strong Beer is the perfect choice for those who want a refreshing strong taste. ",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 1.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class Heineken extends StatelessWidget {
+  const Heineken({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 4.h), // whole container
+      height: 25.h,
+      width: 90.w,
+      child: Row(
+        //Master Coumn and Right side aligned Image
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Heineken",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.9.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 1.h),
+                width: 15.h,
+                height: 11.h,
+                child: Text(
+                    "Heineken has a long history of innovation and sustainability, and the company has set ambitious targets to reduce its carbon emissions.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 0.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.0.h, top: 4.6.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/heinekin.png"), //image cont
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class SomersbyBlackberry extends StatelessWidget {
+  const SomersbyBlackberry({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //color: Color.fromARGB(255, 217, 218, 219),
+      margin: EdgeInsets.only(top: 2.h), // whole container
+      height: 26.h,
+      width: 90.w,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.8.h, top: 5.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/somersbyBlckberry.png"), //image cont
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Blackberry",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.9.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 1.h),
+                width: 15.h,
+                height: 13.h,
+                child: Text(
+                    "To enjoy Somersby Blackberry Beer, it is best served chilled over ice in a glass. Somersby Blackberry Beer Drink is fruity and refreshing.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 1.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class SomersbyApple extends StatelessWidget {
+  const SomersbyApple({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 4.h), // whole container
+      height: 25.h,
+      width: 90.w,
+      child: Row(
+        //Master Coumn and Right side aligned Image
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Somersby",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.9.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 1.h),
+                width: 15.h,
+                height: 11.h,
+                child: Text(
+                    "Refreshing and fruity alcoholic beverage made from fermented apple juice.Somersby is a brand of cider produced by Carlsberg Group.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 0.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.0.h, top: 4.6.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/somersbyApple.png"), //image cont
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

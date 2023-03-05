@@ -99,6 +99,12 @@ flutter:
     - assets/GingerBlast.png
     - assets/lionice.png
     - assets/somersbyApple.png
+    - assets/somersbyBlckberry.png
+    - assets/heinekin.png
+    - assets/AnStrong.png
+    - assets/AncSmooth.png
+    - assets/Bison.png
+    - assets/sake.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
