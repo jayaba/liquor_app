@@ -93,6 +93,12 @@ flutter:
     - assets/spec_brew.png
     - assets/Tiger.png
     - assets/TigerNormal.png
+    - assets/guinness.png
+    - assets/Gb.png
+    - assets/WildApple.png
+    - assets/GingerBlast.png
+    - assets/lionice.png
+    - assets/somersbyApple.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -58,8 +58,709 @@ class BeerScreen extends StatelessWidget {
             height: 1.3.h,
           ),
           TigerOriginal(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          Guinness(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          GB(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          WildApple(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          GingerBlasr(appColors: appColors),
+          SizedBox(
+            height: 1.3.h,
+          ),
+          LionIce(appColors: appColors)
         ]),
       ]),
+    );
+  }
+}
+
+class LionIce extends StatelessWidget {
+  const LionIce({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //color: Color.fromARGB(255, 217, 218, 219),
+      margin: EdgeInsets.only(top: 2.h), // whole container
+      height: 26.h,
+      width: 90.w,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.8.h, top: 5.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/lionice.png"), //image cont
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Lion Ice",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 3.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 1.h),
+                width: 15.h,
+                height: 13.h,
+                child: Text(
+                    "Brand of beer produced by the Lion Brewery in Sri Lanka. It's a light beer with an alcohol content of 5.0% ABV.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 1.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class GingerBlasr extends StatelessWidget {
+  const GingerBlasr({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 4.h), // whole container
+      height: 25.h,
+      width: 90.w,
+      child: Row(
+        //Master Coumn and Right side aligned Image
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Ginger Blast",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 2.9.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 1.h),
+                width: 15.h,
+                height: 11.h,
+                child: Text(
+                    "The ginger blast adds a spicy and sweet flavor to the beer,which can be appealing to those who enjoy the taste of ginger.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 0.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.0.h, top: 4.6.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/GingerBlast.png"), //image cont
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class WildApple extends StatelessWidget {
+  const WildApple({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //color: Color.fromARGB(255, 217, 218, 219),
+      margin: EdgeInsets.only(top: 2.h), // whole container
+      height: 26.h,
+      width: 90.w,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.8.h, top: 5.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/WildApple.png"), //image cont
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Wild Apple",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 3.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 1.h),
+                width: 15.h,
+                height: 13.h,
+                child: Text(
+                    "Wild apple beer is a type of beer that is brewed with wild apples.Used apples that are not cultivated and grow naturally in the wild.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              SizedBox(
+                height: 1.h,
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 1.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class GB extends StatelessWidget {
+  const GB({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 4.h), // whole container
+      height: 25.h,
+      width: 90.w,
+      child: Row(
+        //Master Coumn and Right side aligned Image
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "GB",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 3.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 3.h, top: 1.h),
+                width: 15.h,
+                height: 11.h,
+                child: Text(
+                    "Brewed with all-natural ingredients to export standards, GB Export is an easy-drinking beer with a low level of bitterness taste",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          ),
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 0.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.0.h, top: 4.6.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/Gb.png"), //image cont
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class Guinness extends StatelessWidget {
+  const Guinness({
+    super.key,
+    required this.appColors,
+  });
+
+  final AppColors appColors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      //color: Color.fromARGB(255, 217, 218, 219),
+      margin: EdgeInsets.only(top: 2.h), // whole container
+      height: 26.h,
+      width: 90.w,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Stack(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h, top: 2.5.h),
+                height: 22.h, //frame circle
+                width: 22.h,
+                decoration: BoxDecoration(
+                  // color: Color.fromARGB(255, 0, 170, 162),
+                  borderRadius: BorderRadius.circular(150),
+                  border: Border.all(
+                    color: appColors.main_color,
+                    width: 1,
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 3.5.h),
+                height: 20.h,
+                width: 20.h,
+                decoration: BoxDecoration(
+                  color: appColors.circle_background, //inside circle
+                  borderRadius: BorderRadius.circular(150),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.8.h, top: 5.h),
+                height: 18.h,
+                width: 18.h,
+                // color: Colors.amberAccent,
+                child: Image.asset("assets/guinness.png"), //image cont
+              ),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                width: 14.5.h,
+                height: 3.h,
+                child: Text(
+                  "Guinness",
+                  style: GoogleFonts.philosopher(
+                    //title
+                    //Title
+                    letterSpacing: 1,
+                    textStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 3.h,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(left: 2.h, top: 1.h),
+                width: 15.h,
+                height: 13.h,
+                child: Text(
+                    "Guinness is a dark stout beer and is now sold and enjoyed worldwide.It has a unique flavor profile that is distinct from other beers.",
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.6.h,
+                        fontWeight: FontWeight.normal,
+                      ),
+                    )),
+              ),
+              SizedBox(
+                height: 1.h,
+              ),
+              Container(
+                  margin: EdgeInsets.only(left: 1.h),
+                  height: 5.h,
+                  width: 15.h,
+                  child: OutlinedButton(
+                    //button start
+                    style: OutlinedButton.styleFrom(
+                      side: BorderSide(
+                        width: 0.2.h,
+                        color: appColors.main_color,
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    onPressed: () {
+                      print("sheck");
+                    },
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(left: 0.6.h),
+                          child: Text(
+                            "Check It Out",
+                            style: GoogleFonts.poppins(
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                                fontSize: 1.6.h,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          child: Icon(
+                            Icons.arrow_forward_ios, //button end
+                            color: Colors.black,
+                            size: 1.h,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ))
+            ],
+          )
+        ],
+      ),
     );
   }
 }
