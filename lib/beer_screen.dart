@@ -2232,7 +2232,7 @@ class CarlsbergSmooth extends StatelessWidget {
                     letterSpacing: 1,
                     textStyle: TextStyle(
                       color: Colors.black,
-                      fontSize: 3.h,
+                      fontSize: 2.5.h,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
