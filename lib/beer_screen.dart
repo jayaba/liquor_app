@@ -434,7 +434,7 @@ class AnchorSmooth extends StatelessWidget {
                     letterSpacing: 1,
                     textStyle: TextStyle(
                       color: Colors.black,
-                      fontSize: 2.7.h,
+                      fontSize: 2.5.h,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -455,7 +455,7 @@ class AnchorSmooth extends StatelessWidget {
                     )),
               ),
               Container(
-                  margin: EdgeInsets.only(left: 3.h, top: 0.7.h),
+                  margin: EdgeInsets.only(left: 3.h, top: 1.h),
                   height: 5.h,
                   width: 15.h,
                   child: OutlinedButton(
@@ -602,7 +602,7 @@ class AnchorStrong extends StatelessWidget {
                     letterSpacing: 1,
                     textStyle: TextStyle(
                       color: Colors.black,
-                      fontSize: 2.9.h,
+                      fontSize: 2.5.h,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -623,7 +623,7 @@ class AnchorStrong extends StatelessWidget {
                     )),
               ),
               Container(
-                  margin: EdgeInsets.only(left: 1.h),
+                  margin: EdgeInsets.only(left: 1.h, top: 1.h),
                   height: 5.h,
                   width: 15.h,
                   child: OutlinedButton(
