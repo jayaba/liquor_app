@@ -91,6 +91,8 @@ flutter:
     - assets/carsbergSmooth.png
     - assets/strong.png
     - assets/spec_brew.png
+    - assets/Tiger.png
+    - assets/TigerNormal.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
