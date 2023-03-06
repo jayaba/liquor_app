@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:liquor_app_sinhala/LinePainter.dart';
 import 'package:sizer/sizer.dart';
 import 'package:device_preview/device_preview.dart';
@@ -9,6 +10,7 @@ class LionLargerScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppColors appColors = AppColors();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
@@ -25,7 +27,7 @@ class LionLargerScreen extends StatelessWidget {
         children: [
           Center(
             child: Container(
-              color: Color.fromARGB(255, 180, 179, 177),
+              //   color: Color.fromARGB(255, 180, 179, 177),
               width: 25.h,
               height: 16.h,
               margin: EdgeInsets.only(top: 10),
@@ -56,16 +58,36 @@ class LionLargerScreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 17.h,
+            height: 1.h,
           ),
-          CustomPaint(
-            child: Container(
-              width: 300,
-              height: 200,
-              color: Colors.amberAccent,
+          Container(
+            width: 70.w,
+            height: 35.h,
+            child: Image.asset(
+              'assets/LION-LAGER.png',
+              fit: BoxFit.fitHeight,
             ),
-            foregroundPainter: CurvedPainter(),
+          ),
+
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: appColors.rounded_container,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(60),
+                  topRight: Radius.circular(60),
+                ),
+              ),
+            ),
           )
+          // CustomPaint(
+          //   child: Container(
+          //     width: 300,
+          //     height: 200,
+          //     color: Colors.amberAccent,
+          //   ),
+          //   foregroundPainter: CurvedPainter(),
+          // )
         ],
       ),
     );
