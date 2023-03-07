@@ -4,10 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:liquor_app_sinhala/carlsberg_screen.dart';
 import 'package:liquor_app_sinhala/carlsberg_smooth.dart';
+import 'package:liquor_app_sinhala/guinness.dart';
 import 'package:liquor_app_sinhala/lion_larger.dart';
 import 'package:liquor_app_sinhala/lion_stout.dart';
 import 'package:liquor_app_sinhala/lion_strong.dart';
 import 'package:liquor_app_sinhala/special_brew.dart';
+import 'package:liquor_app_sinhala/tiger_black.dart';
+import 'package:liquor_app_sinhala/tiger_original.dart';
 
 import 'package:sizer/sizer.dart';
 
@@ -1729,7 +1732,11 @@ class Guinness extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => GuinnessScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1831,7 +1838,10 @@ class TigerOriginal extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TigerOriginalScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2002,7 +2012,10 @@ class TigerBlck extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TigerBlackScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
