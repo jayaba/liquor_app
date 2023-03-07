@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:liquor_app_sinhala/App_Colors.dart';
+import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
 class LionLargerScreen extends StatelessWidget {
@@ -9,6 +10,10 @@ class LionLargerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AppColors appColors = AppColors();
+
+    String beer_descrption =
+        "Lion Lager Beer is a popular beer brand in Sri Lanka. It is brewed by the Lion Brewery (Ceylon) PLC, which is a leading brewery in Sri Lanka. Lion Lager Beer is a refreshing, easy-drinking beer that is popular among locals and visitors to Sri Lanka. The beer has a crisp and clean taste, with a subtle bitterness that makes it a great choice for hot, tropical climates. It is available in various sizes, including bottles and cans, and can be found in many bars, restaurants, and supermarkets throughout Sri Lanka.";
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -75,7 +80,7 @@ class LionLargerScreen extends StatelessWidget {
                 textStyle: TextStyle(
                   color: appColors.main_color,
                   fontSize: 3.5.h,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
             ),
@@ -85,12 +90,13 @@ class LionLargerScreen extends StatelessWidget {
           ),
           Container(
             width: 85.w,
-            margin: EdgeInsets.only(right: 6.5.h),
+            // color: Color.fromARGB(255, 95, 75, 14),
+            margin: EdgeInsets.only(right: 0.h),
             child: Row(
-              // mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  margin: EdgeInsets.only(left: 4.8.h),
+                  // margin: EdgeInsets.only(left: 4.8.h),
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
@@ -124,11 +130,12 @@ class LionLargerScreen extends StatelessWidget {
           ),
           Container(
             width: 85.w,
-            margin: EdgeInsets.only(right: 6.5.h),
+            margin: EdgeInsets.only(right: 0.h),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  margin: EdgeInsets.only(left: 4.8.h),
+                  //  margin: EdgeInsets.only(left: 4.8.h),
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
@@ -169,8 +176,36 @@ class LionLargerScreen extends StatelessWidget {
               style: GoogleFonts.poppins(
                   fontSize: 3.5.h,
                   color: appColors.main_color,
-                  fontWeight: FontWeight.w500),
+                  fontWeight: FontWeight.w400),
             ),
+          ),
+          Expanded(
+            child: ListView(children: [
+              Container(
+                color: Colors.amberAccent[200],
+                width: 80.w,
+                child: ReadMoreText(beer_descrption,
+                    trimLines: 4,
+                    colorClickableText: appColors.main_color,
+                    trimMode: TrimMode.Line,
+                    trimCollapsedText: 'Show more',
+                    trimExpandedText: 'Show less',
+                    style: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 1.7.h,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    moreStyle: GoogleFonts.poppins(
+                      textStyle: TextStyle(
+                        color: appColors.main_color,
+                        fontSize: 1.1.h,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )),
+              ),
+            ]),
           )
         ],
       ),
