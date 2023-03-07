@@ -4,16 +4,15 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class LionLargerScreen extends StatelessWidget {
-  const LionLargerScreen({super.key});
+class CarlsbergScreen extends StatelessWidget {
+  const CarlsbergScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    AppColors appColors = AppColors();
-
     String beer_descrption =
-        "Lion Lager Beer is a popular beer brand in Sri Lanka. It is brewed by the Lion Brewery (Ceylon) PLC, which is a leading brewery in Sri Lanka. Lion Lager Beer is a refreshing, easy-drinking beer that is popular among locals and visitors to Sri Lanka. The beer has a crisp and clean taste, with a subtle bitterness that makes it a great choice for hot, tropical climates. It is available in various sizes, including bottles and cans, and can be found in many bars, restaurants, and supermarkets throughout Sri Lanka.";
+        "Carlsberg beer is a well-known brand of beer that is sold in Sri Lanka. It is a Danish beer that is brewed according to traditional methods and has been around for more than 170 years. Carlsberg beer is a pale lager that is light and refreshing, with a smooth taste and a crisp finish.In Sri Lanka, Carlsberg beer is available in cans and bottles in various sizes. It is a popular choice among beer drinkers in the country, and is often consumed at social gatherings, parties, and other events.Carlsberg beer is brewed locally in Sri Lanka by the Lion Brewery Ceylon, which is a subsidiary of the Carlsberg Group. The brewery uses high-quality ingredients and modern brewing techniques to ensure that the beer meets the same high standards as Carlsberg beer brewed elsewhere in the world.Overall, Carlsberg beer is a popular and well-regarded beer brand in Sri Lanka, known for its quality and taste.";
 
+    AppColors appColors = new AppColors();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -31,8 +30,7 @@ class LionLargerScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child:
-                  Image.asset('assets/LION-LAGER.png', fit: BoxFit.fitHeight),
+              child: Image.asset('assets/carsberg.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -42,7 +40,7 @@ class LionLargerScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Lion Lager',
+              'Carlsberg',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -100,7 +98,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 260.00',
+                    'LKR 360.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -140,7 +138,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 410.00',
+                    'LKR 560.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -179,7 +177,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 410.00',
+                    'LKR 570.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,

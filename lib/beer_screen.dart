@@ -2,7 +2,12 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:liquor_app_sinhala/App_Colors.dart';
+import 'package:liquor_app_sinhala/carlsberg_screen.dart';
+import 'package:liquor_app_sinhala/carlsberg_smooth.dart';
 import 'package:liquor_app_sinhala/lion_larger.dart';
+import 'package:liquor_app_sinhala/lion_stout.dart';
+import 'package:liquor_app_sinhala/lion_strong.dart';
+import 'package:liquor_app_sinhala/special_brew.dart';
 
 import 'package:sizer/sizer.dart';
 
@@ -2100,7 +2105,10 @@ class Carlsberg extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CarlsbergScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2271,7 +2279,10 @@ class CarlsbergSmooth extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CarlsbergSmoothScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2374,7 +2385,10 @@ class SpecialBrew extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SpecialBrewScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2545,7 +2559,10 @@ class LionStot extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LionStoutScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2648,7 +2665,10 @@ class LionStrong extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        print("sheck");
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LionStrongScreen()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2711,87 +2731,6 @@ class LionStrong extends StatelessWidget {
                 ),
               ],
             ),
-            // Column(
-            //   children: [
-            //     Container(
-            //       margin: EdgeInsets.only(top: 2.h, left: 1.h),
-            //       width: 14.5.h,
-            //       height: 4.h,
-            //       child: Text(
-            //         "Lion Lager",
-            //         style: GoogleFonts.philosopher(
-            //           //title
-            //           //Title
-            //           letterSpacing: 1,
-            //           textStyle: TextStyle(
-            //             color: Colors.black,
-            //             fontSize: 3.h,
-            //             fontWeight: FontWeight.w600,
-            //           ),
-            //         ),
-            //       ),
-            //     ),
-            //     Container(
-            //       margin: EdgeInsets.only(left: 2.h),
-            //       width: 15.h,
-            //       height: 13.h,
-            //       child: Text(
-            //           "Undoubtedly, \nThe best-selling among our mild beers,\nLion Lager has a 4.8% alcohol volume and is credited as a great thirst quencher.",
-            //           style: GoogleFonts.poppins(
-            //             textStyle: TextStyle(
-            //               color: Colors.black,
-            //               fontSize: 1.6.h,
-            //               fontWeight: FontWeight.normal,
-            //             ),
-            //           )),
-            //     ),
-            //     SizedBox(
-            //       height: 1.h,
-            //     ),
-            //     Container(
-            //         margin: EdgeInsets.only(left: 1.h),
-            //         height: 5.h,
-            //         width: 15.h,
-            //         child: OutlinedButton(
-            //           //button start
-            //           style: OutlinedButton.styleFrom(
-            //             side: BorderSide(
-            //               width: 0.2.h,
-            //               color: appColors.main_color,
-            //               style: BorderStyle.solid,
-            //             ),
-            //           ),
-            //           onPressed: () {
-            //             print("sheck");
-            //           },
-            //           child: Row(
-            //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //             children: [
-            //               Container(
-            //                 margin: EdgeInsets.only(left: 0.6.h),
-            //                 child: Text(
-            //                   "Check It Out",
-            //                   style: GoogleFonts.poppins(
-            //                     textStyle: TextStyle(
-            //                       color: Colors.black,
-            //                       fontSize: 1.6.h,
-            //                       fontWeight: FontWeight.w500,
-            //                     ),
-            //                   ),
-            //                 ),
-            //               ),
-            //               Container(
-            //                 child: Icon(
-            //                   Icons.arrow_forward_ios, //button end
-            //                   color: Colors.black,
-            //                   size: 1.h,
-            //                 ),
-            //               ),
-            //             ],
-            //           ),
-            //         ))
-            //   ],
-            // )
           ],
         ),
       ),

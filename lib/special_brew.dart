@@ -4,16 +4,15 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class LionLargerScreen extends StatelessWidget {
-  const LionLargerScreen({super.key});
+class SpecialBrewScreen extends StatelessWidget {
+  const SpecialBrewScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    AppColors appColors = AppColors();
-
     String beer_descrption =
-        "Lion Lager Beer is a popular beer brand in Sri Lanka. It is brewed by the Lion Brewery (Ceylon) PLC, which is a leading brewery in Sri Lanka. Lion Lager Beer is a refreshing, easy-drinking beer that is popular among locals and visitors to Sri Lanka. The beer has a crisp and clean taste, with a subtle bitterness that makes it a great choice for hot, tropical climates. It is available in various sizes, including bottles and cans, and can be found in many bars, restaurants, and supermarkets throughout Sri Lanka.";
+        "Carlsberg Special Brew is a strong, premium beer brand that is brewed by Carlsberg Group, a Danish multinational brewing company. While Carlsberg beer is available in Sri Lanka, Carlsberg Special Brew is not commonly found in Sri Lanka as it is not a widely distributed product in the country.Carlsberg Special Brew is a high-strength beer with an ABV (alcohol by volume) of 8.8%. It is brewed using a unique blend of malted barley and hops to produce a full-bodied beer with a rich, sweet taste and a slightly bitter finish.Carlsberg Special Brew is often enjoyed as a sipping beer and is sometimes used as a base for beer cocktails. It is available in select markets around the world, including Europe and some parts of Asia. However, it is important to note that its availability and distribution can vary depending on the region.";
 
+    AppColors appColors = new AppColors();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -31,8 +30,7 @@ class LionLargerScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child:
-                  Image.asset('assets/LION-LAGER.png', fit: BoxFit.fitHeight),
+              child: Image.asset('assets/spec_brew.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -42,7 +40,7 @@ class LionLargerScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Lion Lager',
+              'Special Brew',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -100,7 +98,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 260.00',
+                    'LKR 360.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -140,7 +138,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 410.00',
+                    'LKR 580.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -179,7 +177,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 410.00',
+                    'LKR 580.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,

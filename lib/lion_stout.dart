@@ -4,16 +4,15 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class LionLargerScreen extends StatelessWidget {
-  const LionLargerScreen({super.key});
+class LionStoutScreen extends StatelessWidget {
+  const LionStoutScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    AppColors appColors = AppColors();
-
     String beer_descrption =
-        "Lion Lager Beer is a popular beer brand in Sri Lanka. It is brewed by the Lion Brewery (Ceylon) PLC, which is a leading brewery in Sri Lanka. Lion Lager Beer is a refreshing, easy-drinking beer that is popular among locals and visitors to Sri Lanka. The beer has a crisp and clean taste, with a subtle bitterness that makes it a great choice for hot, tropical climates. It is available in various sizes, including bottles and cans, and can be found in many bars, restaurants, and supermarkets throughout Sri Lanka.";
+        "Lion Stout Beer is a popular beer brand in Sri Lanka, brewed by the Lion Brewery (Ceylon) PLC. It is a dark, rich beer that has a full-bodied taste with a slightly bitter finish.Lion Stout is brewed using high-quality malted barley, hops, yeast, and pure water sourced from natural springs. It has an ABV (alcohol by volume) of 8.8%, making it a stronger beer than most lagers. The beer has a distinct roasted flavor, with hints of coffee and chocolate, which makes it a favorite among those who enjoy darker beers.Lion Stout is available in various sizes, including bottles and cans, and can be found in many bars, restaurants, and supermarkets throughout Sri Lanka. It is often enjoyed during social occasions and celebrations, and is a popular choice among beer enthusiasts in the country. The beer has also won numerous awards both locally and internationally for its high quality and taste.";
 
+    AppColors appColors = new AppColors();
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -31,8 +30,7 @@ class LionLargerScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child:
-                  Image.asset('assets/LION-LAGER.png', fit: BoxFit.fitHeight),
+              child: Image.asset('assets/lion_st1.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -42,7 +40,7 @@ class LionLargerScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Lion Lager',
+              'Lion Stout',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -100,7 +98,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 260.00',
+                    'LKR 360.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -140,7 +138,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 410.00',
+                    'LKR 560.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -179,7 +177,7 @@ class LionLargerScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 35.w,
                   child: Text(
-                    'LKR 410.00',
+                    'LKR 570.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
