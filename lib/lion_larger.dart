@@ -182,10 +182,9 @@ class LionLargerScreen extends StatelessWidget {
           Expanded(
             child: ListView(children: [
               Container(
-                color: Colors.amberAccent[200],
-                width: 80.w,
+                margin: EdgeInsets.only(right: 2.h, left: 5.h),
                 child: ReadMoreText(beer_descrption,
-                    trimLines: 4,
+                    trimLines: 6,
                     colorClickableText: appColors.main_color,
                     trimMode: TrimMode.Line,
                     trimCollapsedText: 'Show more',
@@ -200,7 +199,7 @@ class LionLargerScreen extends StatelessWidget {
                     moreStyle: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: appColors.main_color,
-                        fontSize: 1.1.h,
+                        fontSize: 1.7.h,
                         fontWeight: FontWeight.w400,
                       ),
                     )),
