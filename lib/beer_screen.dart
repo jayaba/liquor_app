@@ -2,7 +2,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:liquor_app_sinhala/App_Colors.dart';
-import 'package:liquor_app_sinhala/lionLarger_screen.dart';
+import 'package:liquor_app_sinhala/lion_larger.dart';
+
 import 'package:sizer/sizer.dart';
 
 import 'package:flutter/material.dart';
