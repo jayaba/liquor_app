@@ -1,16 +1,27 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:liquor_app_sinhala/Anchor_strong.dart';
 import 'package:liquor_app_sinhala/App_Colors.dart';
+import 'package:liquor_app_sinhala/Somersby_apple.dart';
+import 'package:liquor_app_sinhala/anchor_smooth.dart';
+import 'package:liquor_app_sinhala/bison.dart';
 import 'package:liquor_app_sinhala/carlsberg_screen.dart';
 import 'package:liquor_app_sinhala/carlsberg_smooth.dart';
+import 'package:liquor_app_sinhala/gb.dart';
+import 'package:liquor_app_sinhala/ginger_blast.dart';
 import 'package:liquor_app_sinhala/guinness.dart';
+import 'package:liquor_app_sinhala/heineken.dart';
+import 'package:liquor_app_sinhala/lion_ice.dart';
 import 'package:liquor_app_sinhala/lion_larger.dart';
 import 'package:liquor_app_sinhala/lion_stout.dart';
 import 'package:liquor_app_sinhala/lion_strong.dart';
+import 'package:liquor_app_sinhala/sake.dart';
+import 'package:liquor_app_sinhala/somersby_blackberry.dart';
 import 'package:liquor_app_sinhala/special_brew.dart';
 import 'package:liquor_app_sinhala/tiger_black.dart';
 import 'package:liquor_app_sinhala/tiger_original.dart';
+import 'package:liquor_app_sinhala/wild_apple.dart';
 
 import 'package:sizer/sizer.dart';
 
@@ -208,7 +219,10 @@ class Sake extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SakeScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -376,7 +390,10 @@ class Bison extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BisonScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -478,8 +495,12 @@ class AnchorSmooth extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AnchorSmoothScreen()));
                     },
+
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -646,7 +667,10 @@ class AnchorStrong extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => AnchorStrongScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -748,7 +772,11 @@ class Heineken extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HeinekenScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -916,7 +944,11 @@ class SomersbyBlackberry extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => SomersbyBlackberryScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1018,7 +1050,10 @@ class SomersbyApple extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SomersbyAppleScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1186,7 +1221,10 @@ class LionIce extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => LionIceScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1288,8 +1326,12 @@ class GingerBlasr extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => GingerBlastScreen()));
                     },
+
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -1459,7 +1501,11 @@ class WildApple extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => WildAppleScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1561,7 +1607,8 @@ class GB extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      print("sheck");
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => GBScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

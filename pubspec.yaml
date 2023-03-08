@@ -109,6 +109,9 @@ flutter:
     - assets/tiger_black.png
     - assets/tiger_bottle.png
     - assets/tiger_smallcan.png
+    - assets/anchorst.png
+    - assets/anchorsmth.png
+    - assets/bison1.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
