@@ -112,7 +112,15 @@ flutter:
     - assets/anchorst.png
     - assets/anchorsmth.png
     - assets/bison1.png
-  #   - images/a_dot_ham.jpeg
+    - assets/dcsl_extraspecial.png
+    - assets/dd.png
+    - assets/vsoa.png
+    - assets/coconut.png
+    - assets/oldArrack.png
+    - assets/whitelabel.png
+    - assets/blackopal.png
+
+      #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
