@@ -119,7 +119,17 @@ flutter:
     - assets/oldArrack.png
     - assets/whitelabel.png
     - assets/blackopal.png
-
+    - assets/triple-blue.png
+    - assets/narikela.png
+    - assets/galery.png
+    - assets/franklinbrandy.png
+    - assets/petroff.png
+    - assets/houseTibary.png
+    - assets/Tillsiderwhisky.png
+    - assets/flinton.png
+    - assets/balmora.png
+    - assets/pericel-mango-arrack.png
+    - assets/pericel-apple-arrack.png
       #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
