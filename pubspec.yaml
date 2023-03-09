@@ -139,6 +139,18 @@ flutter:
     - assets/balmora.png
     - assets/pericel-mango-arrack.png
     - assets/pericel-apple-arrack.png
+    - assets/menidsgold.png
+    - assets/menidsgold1.png
+    - assets/mendisold.png
+    - assets/mendis_special.png
+    - assets/mendis-original-whit.png
+    - assets/menids-gal-arrack.png
+    - assets/mendis-red.png
+    - assets/MENDIS-GREEN-APPLE.png
+    - assets/napoleon_2.png
+    - assets/choice.png
+    - assets/MENDIS-FOUNDER-RESERVE-.png
+    - assets/mendisTriple.png
       #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
