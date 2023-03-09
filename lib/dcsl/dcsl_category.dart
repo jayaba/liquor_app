@@ -6,6 +6,24 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:liquor_app_sinhala/Somersby_apple.dart';
 import 'package:liquor_app_sinhala/anchor_smooth.dart';
 import 'package:liquor_app_sinhala/bison.dart';
+import 'package:liquor_app_sinhala/dcsl/bamora_rum.dart';
+import 'package:liquor_app_sinhala/dcsl/black_opal.dart';
+import 'package:liquor_app_sinhala/dcsl/coconut_Arrack.dart';
+import 'package:liquor_app_sinhala/dcsl/double_distilled.dart';
+import 'package:liquor_app_sinhala/dcsl/extra_arrack.dart';
+import 'package:liquor_app_sinhala/dcsl/flinton.dart';
+import 'package:liquor_app_sinhala/dcsl/frankin.dart';
+import 'package:liquor_app_sinhala/dcsl/gallery.dart';
+import 'package:liquor_app_sinhala/dcsl/house_tibary.dart';
+import 'package:liquor_app_sinhala/dcsl/narikela.dart';
+import 'package:liquor_app_sinhala/dcsl/old_arrack.dart';
+import 'package:liquor_app_sinhala/dcsl/periceyl_apple.dart';
+import 'package:liquor_app_sinhala/dcsl/periceyl_mango.dart';
+import 'package:liquor_app_sinhala/dcsl/petroff_vodka.dart';
+import 'package:liquor_app_sinhala/dcsl/tillsider.dart';
+import 'package:liquor_app_sinhala/dcsl/triple_blue.dart';
+import 'package:liquor_app_sinhala/dcsl/vsoa.dart';
+import 'package:liquor_app_sinhala/dcsl/white_label.dart';
 
 import 'package:liquor_app_sinhala/ginger_blast.dart';
 import 'package:liquor_app_sinhala/guinness.dart';
@@ -211,10 +229,10 @@ class PericeylApple extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => PericeylAppleScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PericeylAppleScreen()));
                     },
 
                     child: Row(
@@ -385,10 +403,10 @@ class PericeylMango extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => PericeylMangoScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PericeylMangoScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -490,11 +508,10 @@ class BalmoraRum extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //       builder: (context) => BalmoraRumScreen()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BamoraScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -662,11 +679,11 @@ class Flinton extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //       builder: (context) => FlintonScreen()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => FlintonScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -768,10 +785,10 @@ class Tillsiderwhisky extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => TillsiderwhiskyScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TillsiderScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -939,10 +956,10 @@ class HouseTibary extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      // context,
-                      // MaterialPageRoute(
-                      //     builder: (context) => HouseTibaryScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => HouseTibaryScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1044,10 +1061,10 @@ class petroff extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => GingerBlastScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PetroffScreen()));
                     },
 
                     child: Row(
@@ -1216,11 +1233,11 @@ class Franklin extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //       builder: (context) => FranklinScreen()),
-                      //    );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => FrankingScreen()),
+                      );
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1322,8 +1339,10 @@ class Gallery extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (context) => GalleryScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => GalerieScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1497,7 +1516,7 @@ class Narikela extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => GuinnessScreen()),
+                            builder: (context) => NarikelaScreen()),
                       );
                     },
                     child: Row(
@@ -1600,12 +1619,12 @@ class TripleBlue extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      //   Navigator.push(
-                      //       context,
-                      //       MaterialPageRoute(
-                      //           builder: (context) => TripleBlueScreen()));
-                      // },
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => TripleBlueScreen()));
                     },
+
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -1778,7 +1797,7 @@ class BlackOpal extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => TigerBlackScreen()));
+                              builder: (context) => BlackOpalScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1880,10 +1899,10 @@ class WhiteLabel extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => WhiteLabelScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WhiteLabelScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2051,10 +2070,10 @@ class OldArrack extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => OldArrackScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => OldArrackScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2156,10 +2175,10 @@ class CoconutArrack extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => CoconutArrackScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CoconutArrackScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2330,10 +2349,10 @@ class VSOA extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => LionStoutScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => VSOAScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2436,10 +2455,10 @@ class DoubleDisti extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => DoubleDistiScreen()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DoubleDistilledScreen()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2613,11 +2632,11 @@ class DCSLExtraSpecial extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        // Navigator.push(
-                        //   context,
-                        //   MaterialPageRoute(
-                        //       builder: (context) => DCSLExtraSpecialScreen()),
-                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ExtraArrackScreen()),
+                        );
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
