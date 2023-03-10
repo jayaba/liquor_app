@@ -151,6 +151,15 @@ flutter:
     - assets/choice.png
     - assets/MENDIS-FOUNDER-RESERVE-.png
     - assets/mendisTriple.png
+    - assets/vat9.png
+    - assets/VX.png
+    - assets/Old+Arrack.png
+    - assets/dd_arrack.png
+    - assets/gov.png
+    - assets/navy_seal_arrack.png
+    - assets/RklandDry.png
+    - assets/lemon_gin_1_.png
+    - assets/Rockland-Red-Rum.png
       #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

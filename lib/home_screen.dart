@@ -5,6 +5,7 @@ import 'package:liquor_app_sinhala/beer_screen.dart';
 import 'package:liquor_app_sinhala/category.dart';
 import 'package:liquor_app_sinhala/dcsl/dcsl_category.dart';
 import 'package:liquor_app_sinhala/mendis/mendis_screen.dart';
+import 'package:liquor_app_sinhala/rockland/rockland_screen.dart';
 import 'package:liquor_app_sinhala/second_onboard_screen.dart';
 import 'package:sizer/sizer.dart';
 
@@ -1018,7 +1019,8 @@ class CategoryROCKLAND extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         overlayColor: MaterialStateProperty.all(appColors.main_color),
-        onTap: () => print("tapped"),
+        onTap: () => Navigator.push(
+            context, MaterialPageRoute(builder: (context) => RocklandScreen())),
         radius: 60,
         child: Ink.image(
             fit: BoxFit.contain, // Fixes border issues
