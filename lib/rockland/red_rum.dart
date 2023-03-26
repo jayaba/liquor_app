@@ -147,7 +147,7 @@ class RedRumScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  //     color: Colors.amberAccent[200],
+              
                   height: 2.h,
                   width: 38.w,
                   child: Text(
