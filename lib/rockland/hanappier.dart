@@ -4,13 +4,13 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class NapoleonScreen extends StatelessWidget {
-  const NapoleonScreen({super.key});
+class HanappierScreen extends StatelessWidget {
+  const HanappierScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     String beer_descrption =
-        "Napoloon Brandy is a type of spirit that is distilled from wine, typically made from fermented grapes.specifically in the Cognac region of France and is considered to be the finest type of brandy. Armagnac is made in the Armagnac region of France and is known for its bold, robust flavor. Calvados is a type of brandy that is made from apples and is produced in the Normandy region of France.Brandy is often consumed as an after-dinner drink and is also used as an ingredient in cocktails and cooking. It is typically served at room temperature or slightly warmed in a snifter glass to allow the aromas and flavors to fully develop.";
+        "A smooth well-balanced finish,Hanappier brandy is a French brandy that is produced by Domaines Francis Abecassis, while Rockland is a chain of supermarkets and department stores in Sri Lanka.It's possible that Rockland Sri Lanka may carry Hanappier brandy or other imported spirits, but I cannot confirm this information. If you are looking to purchase Hanappier brandy in Sri Lanka, I suggest checking with local liquor stores or conducting an online search for retailers that carry imported spirits.";
 
     AppColors appColors = new AppColors();
     return Scaffold(
@@ -30,8 +30,7 @@ class NapoleonScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child: Image.asset('assets/napoleon_2.png',
-                  fit: BoxFit.fitHeight),
+              child: Image.asset('assets/hanappier.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -41,7 +40,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Napoloon',
+              'Hanappier',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -56,7 +55,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.h,
             width: 38.w,
             child: Text(
-              '180ml Bottle  | 34%\n375ml Bottle  |  34%\n750ml Bottle  |  34%',
+              '180ml Bottle   | 38.5%\n375ml Bottle  |  38.5%\n750ml Bottle  |  38.5%',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.grey,
@@ -96,7 +95,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 750.00',
+                    'LKR 1060.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -111,7 +110,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  180ml Can',
+                    '|  180ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -136,7 +135,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 1440.00',
+                    'LKR 2300.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -147,11 +146,10 @@ class NapoleonScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  //     color: Colors.amberAccent[200],
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  375ml Can',
+                    '|  375ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -175,7 +173,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 2880.00',
+                    'LKR 4400.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,

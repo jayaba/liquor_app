@@ -160,6 +160,11 @@ flutter:
     - assets/RklandDry.png
     - assets/lemon_gin_1_.png
     - assets/Rockland-Red-Rum.png
+    - assets/Rockland-White.png
+    - assets/hanappier.png
+    - assets/napoleon1.png
+    - assets/oldkeg.png
+    - assets/Roskaa-Vodka.png
       #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

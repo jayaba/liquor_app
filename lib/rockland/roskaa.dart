@@ -4,13 +4,13 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class NapoleonScreen extends StatelessWidget {
-  const NapoleonScreen({super.key});
+class RoskaaScreen extends StatelessWidget {
+  const RoskaaScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     String beer_descrption =
-        "Napoloon Brandy is a type of spirit that is distilled from wine, typically made from fermented grapes.specifically in the Cognac region of France and is considered to be the finest type of brandy. Armagnac is made in the Armagnac region of France and is known for its bold, robust flavor. Calvados is a type of brandy that is made from apples and is produced in the Normandy region of France.Brandy is often consumed as an after-dinner drink and is also used as an ingredient in cocktails and cooking. It is typically served at room temperature or slightly warmed in a snifter glass to allow the aromas and flavors to fully develop.";
+        "Clear distilled alcoholic beverage that is composed primarily of water and ethanol. It is traditionally made from grains such as wheat, rye, or corn, although some modern varieties may also be made from potatoes, grapes, or other ingredients.Vodka is widely consumed around the world and is a popular ingredient in many cocktails. It is typically served chilled or at room temperature, and its relatively neutral flavor profile makes it a versatile base for mixing with other ingredients.While vodka has a long history, its exact origins are uncertain. It is believed to have originated in either Russia or Poland, and it has been produced and consumed in those countries for centuries. Today, vodka is produced and enjoyed in many countries around the world.";
 
     AppColors appColors = new AppColors();
     return Scaffold(
@@ -30,8 +30,8 @@ class NapoleonScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child: Image.asset('assets/napoleon_2.png',
-                  fit: BoxFit.fitHeight),
+              child:
+                  Image.asset('assets/Roskaa-Vodka.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -41,7 +41,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Napoloon',
+              'Roskaa',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -56,7 +56,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.h,
             width: 38.w,
             child: Text(
-              '180ml Bottle  | 34%\n375ml Bottle  |  34%\n750ml Bottle  |  34%',
+              '180ml Bottle   | 38%\n375ml Bottle  |  38%\n750ml Bottle  |  38%',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.grey,
@@ -96,7 +96,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 750.00',
+                    'LKR 0.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -111,7 +111,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  180ml Can',
+                    '|  180ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -136,7 +136,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 1440.00',
+                    'LKR 0.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -147,11 +147,10 @@ class NapoleonScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  //     color: Colors.amberAccent[200],
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  375ml Can',
+                    '|  375ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -175,7 +174,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 2880.00',
+                    'LKR 0.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,

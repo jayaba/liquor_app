@@ -4,13 +4,13 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class NapoleonScreen extends StatelessWidget {
-  const NapoleonScreen({super.key});
+class OldKegScreen extends StatelessWidget {
+  const OldKegScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     String beer_descrption =
-        "Napoloon Brandy is a type of spirit that is distilled from wine, typically made from fermented grapes.specifically in the Cognac region of France and is considered to be the finest type of brandy. Armagnac is made in the Armagnac region of France and is known for its bold, robust flavor. Calvados is a type of brandy that is made from apples and is produced in the Normandy region of France.Brandy is often consumed as an after-dinner drink and is also used as an ingredient in cocktails and cooking. It is typically served at room temperature or slightly warmed in a snifter glass to allow the aromas and flavors to fully develop.";
+        "This Old Keg Double Blend whisky has been made by blending two premium whiskies.when comes to the tasting it has a gentle floral whiskey nose with a lingering scotch taste.Drunk on its own, on the rocks or topped up with your favourite chaser. This whisky is a must have for every whisky lover.";
 
     AppColors appColors = new AppColors();
     return Scaffold(
@@ -30,8 +30,7 @@ class NapoleonScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child: Image.asset('assets/napoleon_2.png',
-                  fit: BoxFit.fitHeight),
+              child: Image.asset('assets/oldkeg.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -41,7 +40,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Napoloon',
+              'Old Keg',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -56,7 +55,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.h,
             width: 38.w,
             child: Text(
-              '180ml Bottle  | 34%\n375ml Bottle  |  34%\n750ml Bottle  |  34%',
+              '375ml Bottle  |  40%\n750ml Bottle  |  40%',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.grey,
@@ -96,7 +95,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 750.00',
+                    'LKR 2450.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -107,51 +106,10 @@ class NapoleonScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  //     color: Colors.amberAccent[200],
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  180ml Can',
-                    style: GoogleFonts.poppins(
-                      textStyle: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 1.7.h,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
-            width: 85.w,
-            // color: Color.fromARGB(255, 95, 75, 14),
-            margin: EdgeInsets.only(right: 0.h),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Container(
-                  // margin: EdgeInsets.only(left: 4.8.h),
-                  height: 3.4.h,
-                  width: 38.w,
-                  child: Text(
-                    'LKR 1440.00',
-                    style: GoogleFonts.sono(
-                      textStyle: TextStyle(
-                        color: Colors.black,
-                        fontSize: 3.h,
-                        fontWeight: FontWeight.w400,
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  //     color: Colors.amberAccent[200],
-                  height: 2.h,
-                  width: 38.w,
-                  child: Text(
-                    '|  375ml Can',
+                    '|  375ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -175,7 +133,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 2880.00',
+                    'LKR 4450.00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -221,7 +179,7 @@ class NapoleonScreen extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.only(right: 2.h, left: 5.h),
                   child: ReadMoreText(beer_descrption,
-                      trimLines: 5,
+                      trimLines: 7,
                       colorClickableText: appColors.main_color,
                       trimMode: TrimMode.Line,
                       trimCollapsedText: 'Show more',

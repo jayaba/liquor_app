@@ -8,7 +8,7 @@ import 'package:liquor_app_sinhala/anchor_smooth.dart';
 import 'package:liquor_app_sinhala/bison.dart';
 
 import 'package:liquor_app_sinhala/dcsl/double_distilled.dart';
-import 'package:liquor_app_sinhala/gb.dart';
+
 import 'package:liquor_app_sinhala/ginger_blast.dart';
 
 import 'package:liquor_app_sinhala/heineken.dart';
@@ -16,15 +16,21 @@ import 'package:liquor_app_sinhala/lion_ice.dart';
 import 'package:liquor_app_sinhala/lion_larger.dart';
 import 'package:liquor_app_sinhala/lion_stout.dart';
 import 'package:liquor_app_sinhala/lion_strong.dart';
+import 'package:liquor_app_sinhala/mendis/mendis_napoleon.dart';
 import 'package:liquor_app_sinhala/rockland/double_distilled.dart';
 import 'package:liquor_app_sinhala/rockland/drygin.dart';
 import 'package:liquor_app_sinhala/rockland/govenors_choice.dart';
+import 'package:liquor_app_sinhala/rockland/hanappier.dart';
 import 'package:liquor_app_sinhala/rockland/lemon_gin.dart';
+import 'package:liquor_app_sinhala/rockland/napoleone.dart';
 import 'package:liquor_app_sinhala/rockland/navyseal.dart';
 import 'package:liquor_app_sinhala/rockland/old_arrack.dart';
+import 'package:liquor_app_sinhala/rockland/oldkeg.dart';
 import 'package:liquor_app_sinhala/rockland/red_rum.dart';
+import 'package:liquor_app_sinhala/rockland/roskaa.dart';
 import 'package:liquor_app_sinhala/rockland/vat9.dart';
 import 'package:liquor_app_sinhala/rockland/vx_arrack.dart';
+import 'package:liquor_app_sinhala/rockland/white_rum.dart';
 import 'package:liquor_app_sinhala/sake.dart';
 import 'package:liquor_app_sinhala/somersby_blackberry.dart';
 import 'package:liquor_app_sinhala/special_brew.dart';
@@ -114,23 +120,23 @@ class RocklandScreen extends StatelessWidget {
           SizedBox(
             height: 1.3.h,
           ),
-          GB(appColors: appColors),
+          WhiteRum(appColors: appColors),
           SizedBox(
             height: 1.3.h,
           ),
-          WildApple(appColors: appColors),
+          Hanappier(appColors: appColors),
           SizedBox(
             height: 1.3.h,
           ),
-          GingerBlasr(appColors: appColors),
+          Napoleon(appColors: appColors),
           SizedBox(
             height: 1.3.h,
           ),
-          LionIce(appColors: appColors),
+          OldKeg(appColors: appColors),
           SizedBox(
             height: 1.3.h,
           ),
-          SomersbyApple(appColors: appColors),
+          Roskaa(appColors: appColors),
           SizedBox(
             height: 1.3.h,
           ),
@@ -270,7 +276,7 @@ class Sake extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -313,7 +319,7 @@ class Bison extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -327,7 +333,7 @@ class Bison extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -547,7 +553,7 @@ class AnchorSmooth extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -590,7 +596,7 @@ class AnchorStrong extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -604,7 +610,7 @@ class AnchorStrong extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -824,7 +830,7 @@ class Heineken extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -867,7 +873,7 @@ class SomersbyBlackberry extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -881,7 +887,7 @@ class SomersbyBlackberry extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -995,8 +1001,8 @@ class SomersbyBlackberry extends StatelessWidget {
   }
 }
 
-class SomersbyApple extends StatelessWidget {
-  const SomersbyApple({
+class Roskaa extends StatelessWidget {
+  const Roskaa({
     super.key,
     required this.appColors,
   });
@@ -1016,11 +1022,11 @@ class SomersbyApple extends StatelessWidget {
           Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 4.h, left: 2.h),
+                margin: EdgeInsets.only(top: 4.5.h, left: 2.h),
                 width: 14.5.h,
                 height: 3.h,
                 child: Text(
-                  "Somersby",
+                  "Roskaa",
                   style: GoogleFonts.philosopher(
                     //title
                     //Title
@@ -1036,9 +1042,9 @@ class SomersbyApple extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(left: 3.h, top: 1.h),
                 width: 15.h,
-                height: 11.h,
+                height: 10.h,
                 child: Text(
-                    "Refreshing and fruity alcoholic beverage made from fermented apple juice.Somersby is a brand of cider produced by NavySeal Group.",
+                    "clear, colorless and odorless distilled spirit that is typically made from grains and potatoes.",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -1064,7 +1070,7 @@ class SomersbyApple extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SomersbyAppleScreen()));
+                              builder: (context) => RoskaaScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1101,7 +1107,7 @@ class SomersbyApple extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1119,11 +1125,11 @@ class SomersbyApple extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 2.0.h, top: 4.6.h),
+                margin: EdgeInsets.only(left: 2.5.h, top: 4.6.h),
                 height: 18.h,
                 width: 18.h,
                 // color: Colors.amberAccent,
-                child: Image.asset("assets/somersbyApple.png"), //image cont
+                child: Image.asset("assets/Roskaa-Vodka.png"), //image cont
               ),
             ],
           ),
@@ -1133,8 +1139,8 @@ class SomersbyApple extends StatelessWidget {
   }
 }
 
-class LionIce extends StatelessWidget {
-  const LionIce({
+class OldKeg extends StatelessWidget {
+  const OldKeg({
     super.key,
     required this.appColors,
   });
@@ -1144,7 +1150,7 @@ class LionIce extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -1158,7 +1164,7 @@ class LionIce extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1180,18 +1186,18 @@ class LionIce extends StatelessWidget {
                 height: 18.h,
                 width: 18.h,
                 // color: Colors.amberAccent,
-                child: Image.asset("assets/lionice.png"), //image cont
+                child: Image.asset("assets/oldkeg.png"), //image cont
               ),
             ],
           ),
           Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 3.h, left: 1.h),
+                margin: EdgeInsets.only(top: 6.h, left: 1.h),
                 width: 14.5.h,
                 height: 3.h,
                 child: Text(
-                  "Lion Ice",
+                  "Old KEG",
                   style: GoogleFonts.philosopher(
                     //title
                     //Title
@@ -1207,9 +1213,9 @@ class LionIce extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(left: 2.h, top: 1.h),
                 width: 15.h,
-                height: 13.h,
+                height: 8.h,
                 child: Text(
-                    "Brand of beer produced by the Lion Brewery in Sri Lanka. It's a light beer with an alcohol content of 5.0% ABV.",
+                    "A gentle floral whiskey nose with a lingering scotch taste.",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -1235,7 +1241,7 @@ class LionIce extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => LionIceScreen()));
+                              builder: (context) => OldKegScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1271,8 +1277,8 @@ class LionIce extends StatelessWidget {
   }
 }
 
-class GingerBlasr extends StatelessWidget {
-  const GingerBlasr({
+class Napoleon extends StatelessWidget {
+  const Napoleon({
     super.key,
     required this.appColors,
   });
@@ -1296,7 +1302,7 @@ class GingerBlasr extends StatelessWidget {
                 width: 14.5.h,
                 height: 3.h,
                 child: Text(
-                  "Ginger Blast",
+                  "Napoleon",
                   style: GoogleFonts.philosopher(
                     //title
                     //Title
@@ -1314,7 +1320,7 @@ class GingerBlasr extends StatelessWidget {
                 width: 15.h,
                 height: 11.h,
                 child: Text(
-                    "The ginger blast adds a spicy and sweet flavor to the beer,which can be appealing to those who enjoy the taste of ginger.",
+                    "This brandy is made from a blend of imported French grape brandy and premium Indian spirits.",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -1340,7 +1346,7 @@ class GingerBlasr extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => GingerBlastScreen()));
+                              builder: (context) => NapoleonScreenRockland()));
                     },
 
                     child: Row(
@@ -1378,7 +1384,7 @@ class GingerBlasr extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1400,7 +1406,7 @@ class GingerBlasr extends StatelessWidget {
                 height: 18.h,
                 width: 18.h,
                 // color: Colors.amberAccent,
-                child: Image.asset("assets/GingerBlast.png"), //image cont
+                child: Image.asset("assets/napoleon1.png"), //image cont
               ),
             ],
           ),
@@ -1410,8 +1416,8 @@ class GingerBlasr extends StatelessWidget {
   }
 }
 
-class WildApple extends StatelessWidget {
-  const WildApple({
+class Hanappier extends StatelessWidget {
+  const Hanappier({
     super.key,
     required this.appColors,
   });
@@ -1421,7 +1427,7 @@ class WildApple extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -1435,7 +1441,7 @@ class WildApple extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1457,7 +1463,7 @@ class WildApple extends StatelessWidget {
                 height: 18.h,
                 width: 18.h,
                 // color: Colors.amberAccent,
-                child: Image.asset("assets/WildApple.png"), //image cont
+                child: Image.asset("assets/hanappier.png"), //image cont
               ),
             ],
           ),
@@ -1468,7 +1474,7 @@ class WildApple extends StatelessWidget {
                 width: 14.5.h,
                 height: 3.h,
                 child: Text(
-                  "Wild Apple",
+                  "Hanappier",
                   style: GoogleFonts.philosopher(
                     //title
                     //Title
@@ -1484,9 +1490,9 @@ class WildApple extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(left: 2.h, top: 1.h),
                 width: 15.h,
-                height: 13.h,
+                height: 11.h,
                 child: Text(
-                    "Wild apple beer is a type of beer that is brewed with wild apples.Used apples that are not cultivated and grow naturally in the wild.",
+                    "Originally distilled in Europe, the brandy is now locally blended to bring you one of the finest blended brandies.",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -1515,7 +1521,7 @@ class WildApple extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => WildAppleScreen()),
+                            builder: (context) => HanappierScreen()),
                       );
                     },
                     child: Row(
@@ -1552,8 +1558,8 @@ class WildApple extends StatelessWidget {
   }
 }
 
-class GB extends StatelessWidget {
-  const GB({
+class WhiteRum extends StatelessWidget {
+  const WhiteRum({
     super.key,
     required this.appColors,
   });
@@ -1577,7 +1583,7 @@ class GB extends StatelessWidget {
                 width: 14.5.h,
                 height: 3.h,
                 child: Text(
-                  "GB",
+                  "White Rum",
                   style: GoogleFonts.philosopher(
                     //title
                     //Title
@@ -1595,7 +1601,7 @@ class GB extends StatelessWidget {
                 width: 15.h,
                 height: 11.h,
                 child: Text(
-                    "Brewed with all-natural ingredients to export standards, GB Export is an easy-drinking beer with a low level of bitterness taste",
+                    "Rockland White Rum is a popular brand of white rum produced in Sri Lanka. It is made from molasses and filtered and bottled.",
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -1618,8 +1624,10 @@ class GB extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => GBScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => WhiteRumScreen()));
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1656,7 +1664,7 @@ class GB extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1678,7 +1686,7 @@ class GB extends StatelessWidget {
                 height: 18.h,
                 width: 18.h,
                 // color: Colors.amberAccent,
-                child: Image.asset("assets/Gb.png"), //image cont
+                child: Image.asset("assets/Rockland-White.png"), //image cont
               ),
             ],
           ),
@@ -1699,7 +1707,7 @@ class RedRum extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -1713,7 +1721,7 @@ class RedRum extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1886,7 +1894,6 @@ class LemonGin extends StatelessWidget {
                   height: 5.h,
                   width: 15.h,
                   child: OutlinedButton(
-                  
                     style: OutlinedButton.styleFrom(
                       side: BorderSide(
                         width: 0.2.h,
@@ -1935,7 +1942,7 @@ class LemonGin extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -1978,7 +1985,7 @@ class DryGin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -1992,7 +1999,7 @@ class DryGin extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -2214,7 +2221,7 @@ class NavySeal extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -2257,7 +2264,7 @@ class GovernorsChoice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -2271,7 +2278,7 @@ class GovernorsChoice extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -2492,7 +2499,7 @@ class DoubleDistilled extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -2535,7 +2542,7 @@ class OldArrack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //color: Color.fromARGB(255, 217, 218, 219),
+      //color: Color.fromARWhiteRum(255, 217, 218, 219),
       margin: EdgeInsets.only(top: 2.h), // whole container
       height: 26.h,
       width: 90.w,
@@ -2549,7 +2556,7 @@ class OldArrack extends StatelessWidget {
                 height: 22.h, //frame circle
                 width: 22.h,
                 decoration: BoxDecoration(
-                  // color: Color.fromARGB(255, 0, 170, 162),
+                  // color: Color.fromARWhiteRum(255, 0, 170, 162),
                   borderRadius: BorderRadius.circular(150),
                   border: Border.all(
                     color: appColors.main_color,
@@ -2769,7 +2776,7 @@ class VX extends StatelessWidget {
                   height: 22.h, //frame circle
                   width: 22.h,
                   decoration: BoxDecoration(
-                    // color: Color.fromARGB(255, 0, 170, 162),
+                    // color: Color.fromARWhiteRum(255, 0, 170, 162),
                     borderRadius: BorderRadius.circular(150),
                     border: Border.all(
                       color: appColors.main_color,
@@ -2814,7 +2821,7 @@ class vat9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        //color: Color.fromARGB(255, 217, 218, 219),
+        //color: Color.fromARWhiteRum(255, 217, 218, 219),
         margin: EdgeInsets.only(top: 2.h), // whole container
         height: 26.h,
         width: 90.w,
@@ -2828,7 +2835,7 @@ class vat9 extends StatelessWidget {
                   height: 22.h, //frame circle
                   width: 22.h,
                   decoration: BoxDecoration(
-                    // color: Color.fromARGB(255, 0, 170, 162),
+                    // color: Color.fromARWhiteRum(255, 0, 170, 162),
                     borderRadius: BorderRadius.circular(150),
                     border: Border.all(
                       color: appColors.main_color,

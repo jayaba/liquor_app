@@ -4,13 +4,13 @@ import 'package:liquor_app_sinhala/App_Colors.dart';
 import 'package:readmore/readmore.dart';
 import 'package:sizer/sizer.dart';
 
-class NapoleonScreen extends StatelessWidget {
-  const NapoleonScreen({super.key});
+class NapoleonScreenRockland extends StatelessWidget {
+  const NapoleonScreenRockland({super.key});
 
   @override
   Widget build(BuildContext context) {
     String beer_descrption =
-        "Napoloon Brandy is a type of spirit that is distilled from wine, typically made from fermented grapes.specifically in the Cognac region of France and is considered to be the finest type of brandy. Armagnac is made in the Armagnac region of France and is known for its bold, robust flavor. Calvados is a type of brandy that is made from apples and is produced in the Normandy region of France.Brandy is often consumed as an after-dinner drink and is also used as an ingredient in cocktails and cooking. It is typically served at room temperature or slightly warmed in a snifter glass to allow the aromas and flavors to fully develop.";
+        "Rockland Napoleon Brandy is a type of brandy that is produced by the Rockland Distilleries Pvt. Ltd, which is based in India. This brandy is made from a blend of imported French grape brandy and premium Indian spirits, which are aged in oak casks to achieve a smooth and rich flavor.Rockland Napoleon Brandy is a premium brandy that is considered to be one of the best in India. It has a deep amber color and a complex aroma that is reminiscent of dried fruits, vanilla, and oak. On the palate, it has a smooth and mellow flavor, with notes of caramel, toffee, and spices.This brandy can be enjoyed on its own, over ice, or as a base for cocktails. It is also commonly used in cooking, particularly in desserts and sauces. Overall, Rockland Napoleon Brandy is a high-quality brandy that is enjoyed by many brandy enthusiasts around the world.";
 
     AppColors appColors = new AppColors();
     return Scaffold(
@@ -30,8 +30,7 @@ class NapoleonScreen extends StatelessWidget {
             child: Container(
               height: 45.h,
               width: 80.w,
-              child: Image.asset('assets/napoleon_2.png',
-                  fit: BoxFit.fitHeight),
+              child: Image.asset('assets/napoleon1.png', fit: BoxFit.fitHeight),
             ),
           ),
           SizedBox(
@@ -41,7 +40,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.3.h,
             width: 80.w,
             child: Text(
-              'Napoloon',
+              'Napoleon',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.black,
@@ -56,7 +55,7 @@ class NapoleonScreen extends StatelessWidget {
             height: 6.h,
             width: 38.w,
             child: Text(
-              '180ml Bottle  | 34%\n375ml Bottle  |  34%\n750ml Bottle  |  34%',
+              '180ml Bottle   | 38%\n375ml Bottle  |  38%\n750ml Bottle  |  38%',
               style: GoogleFonts.poppins(
                 textStyle: TextStyle(
                   color: Colors.grey,
@@ -96,7 +95,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 750.00',
+                    'LKR .00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -111,7 +110,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  180ml Can',
+                    '|  180ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -136,7 +135,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 1440.00',
+                    'LKR .00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
@@ -147,11 +146,10 @@ class NapoleonScreen extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  //     color: Colors.amberAccent[200],
                   height: 2.h,
                   width: 38.w,
                   child: Text(
-                    '|  375ml Can',
+                    '|  375ml Bottle',
                     style: GoogleFonts.poppins(
                       textStyle: TextStyle(
                         color: Colors.grey,
@@ -175,7 +173,7 @@ class NapoleonScreen extends StatelessWidget {
                   height: 3.4.h,
                   width: 38.w,
                   child: Text(
-                    'LKR 2880.00',
+                    'LKR .00',
                     style: GoogleFonts.sono(
                       textStyle: TextStyle(
                         color: Colors.black,
